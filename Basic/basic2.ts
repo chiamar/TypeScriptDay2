@@ -19,6 +19,7 @@ new Person2 ("Jane Doe", 33, "Financial Officer");
 
 
 class Employee extends Person2 {
+  //you have to define type for the parent properties as well!
   constructor(name: string, age: number, jobTitle: string, public salary: number, public jobLocation: string)
   {
     super(name, age, jobTitle)
