@@ -15,17 +15,21 @@ class Person2 implements person {
   }
 }
 
-new Person2(
-  "John Doe",
-  30,
-  "Engineer"
-)
+new Person2 ("Jane Doe", 33, "Financial Officer");
 
-new Person2(
-  "Jane Doe",
-  25,
-  "Quality Control Officer"
-)
+
+class Employee extends Person2 {
+  constructor(name: string, age: number, jobTitle: string, public salary: number, public jobLocation: string)
+  {
+    super(name, age, jobTitle)
+    arr.push(this);
+  }
+  returnString() {
+    return `${super.returnString()} I earn ${this.salary} every month and work in ${this.jobLocation} right now.` 
+  }
+}
+
+new Employee ("Stefan Teaca", 22, "JS Engineer", 4000, "Vienna");
 
 for(let val of arr) {
   console.log(val.returnString())
