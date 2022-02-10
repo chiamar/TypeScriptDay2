@@ -4,6 +4,8 @@ interface person{
   name: string;
   age: number;
   jobTitle: string;
+  returnString: Function;
+  
 }
 
 class Person2 implements person {
