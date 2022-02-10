@@ -11,13 +11,13 @@ class Vehicle {
     }
     showCard() {
         return `<div class="card border-0" style="width: 18rem;">
-      <img src="${this.img}" class="card-img-top" height="200" style="object-fit:cover; object-position:center" alt="${this.type}, ${this.brand}, ${this.model}">
-      <div class="card-body" style="opacity:0; height:0; padding:0">
-        <h5 class="card-title">${this.brand}</h5>
-        <h6 class="card-title">${this.model}</h6>
-        <p class="card-text">Price: ${this.calculatePrice()} €</p>
-      </div>
-    </div>`;
+        <img src="${this.img}" class="card-img-top" height="200" style="object-fit:cover; object-position:center" alt="${this.type}, ${this.brand}, ${this.model}">
+        <div class="card-body" style="opacity:0; height:0; padding:0">
+          <h5 class="card-title">${this.brand}</h5>
+          <h6 class="card-title">${this.model}</h6>
+          <p class="card-text">Price: ${this.calculatePrice()} €</p>
+        </div>
+      </div>`;
     }
     calculatePrice() {
         let price = 0;
